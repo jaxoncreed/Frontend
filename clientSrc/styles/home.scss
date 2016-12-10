@@ -1,33 +1,71 @@
 
 .home {
-  height: calc(100vh - 70px);
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-left: 5%;
-  padding-right: 5%;
 
   .banner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 256px;
 
     h1 {
       font-size: 300%;
-      margin-bottom: 0px;
+      margin: 0px;
       text-align: center;
     }
     .buttonNavigation {
       margin-top: 16px;
-      .linkButton {
-        padding: 8px;
-        border: 1px solid #000;
-        text-decoration: none;
+      display: flex;
+      .secondary-button {
         margin-left: 8px;
       }
-      .linkButton:hover {
-        border: 1px solid #888;
-      }
+    }
+  }
+  .search-container {
+  }
+}
+
+@media (min-width: 1000px) {
+  .home {
+    height: calc(100vh - 70px);
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    .banner-container {
+      height: 100%;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      padding-right: 5%;
+      padding-left: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .search-container {
+      padding-top: 32px;
+      box-sizing: border-box;
+      flex-shrink: 1;
+      height: 100%;
+      flex-grow: 1;
+      padding-right: 5%;
+      padding-left: 5%;
+      overflow-y: auto;
+    }
+  }
+}
+@media (max-width: 999px) {
+  .home {
+    align-items: center;
+    flex-direction: column;
+
+    .banner-container {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+    .search-container {
+      margin-left: 5%;
+      margin-right: 5%;
     }
   }
 }
