@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
+@import 'home';
+@import 'layout';
+
+body {
+	background-color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+a {
+	color: #000;
+}
+a:hover {
+	color: #888;
+}
