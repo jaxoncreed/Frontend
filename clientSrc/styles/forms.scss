@@ -1,0 +1,42 @@
+
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 14px;
+  height: 34px;
+  padding: 8px;
+  padding-bottom: 4px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+input[type=text]:focus {
+  outline: none;
+  border-bottom: 2px solid #888;
+  padding-bottom: 3px;
+}
+input[type=text]:hover {
+  border-bottom-color: #888;
+}
+
+form {
+  input[type=text] {
+    display: block;
+    width: 100%;
+  }
+}
+
+.iconTextInput {
+  position: relative;
+  padding-bottom: 8px;
+
+  .fa {
+    position: absolute;
+    font-size: 14px;
+    padding: 8px;
+    bottom: 8px;
+    pointer-events: none;
+  }
+  input[type=text] {
+    padding-left: 28px;
+  }
+}

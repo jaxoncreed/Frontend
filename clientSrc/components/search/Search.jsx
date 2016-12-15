@@ -20,7 +20,7 @@ const Search = React.createClass({
     let ResultComponent = this.props.resultComponent;
     return (
       <div className="search">
-        <form className="search-bar" onSubmit={this.search}>
+        <form className="search-bar clickableShadow" onSubmit={this.search}>
           <input
               type="text"
               placeholder="find data sets"
@@ -31,7 +31,7 @@ const Search = React.createClass({
         <section className="search-results">
           {this.props.searchResults.map((result) => {
             return (
-              <div className="search-result">
+              <div className="search-result clickableShadow">
                 <ResultComponent data={result} />
               </div>
             );
