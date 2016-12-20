@@ -12,15 +12,15 @@ const CreateUserForm = React.createClass({
         </div>
         <div className="iconTextInput">
           <i className="fa fa-envelope" aria-hidden="true"></i>
-          <input type="text" placeholder="email"></input>
+          <input type="email" placeholder="email"></input>
         </div>
         <div className="iconTextInput">
           <i className="fa fa-lock" aria-hidden="true"></i>
-          <input type="text" placeholder="password"></input>
+          <input type="password" placeholder="password"></input>
         </div>
         <div className="iconTextInput">
           <i className="fa fa-lock" aria-hidden="true"></i>
-          <input type="text" placeholder="confirm password"></input>
+          <input type="password" placeholder="confirm password"></input>
         </div>
         <input type="submit" className="primary-button" value="create account" />
       </form>

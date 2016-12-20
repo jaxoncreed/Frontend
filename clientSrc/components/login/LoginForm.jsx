@@ -12,7 +12,7 @@ const LoginForm = React.createClass({
         </div>
         <div className="iconTextInput">
           <i className="fa fa-lock" aria-hidden="true"></i>
-          <input type="text" placeholder="password"></input>
+          <input type="password" placeholder="password"></input>
         </div>
         <input type="submit" className="primary-button" value="log in" />
       </form>

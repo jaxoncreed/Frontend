@@ -34,11 +34,16 @@ export default function renderHandler(req, res) {
     } else if (redirectLocation) {
       res.redirect(302, redirectLocation.pathname + redirectLocation.search)
     } else if (renderProps) {
+
       // Create a new Redux store instance
       const store = createStore(reducer)
 
       // Render the component to a string
-      const html = renderToString(<RouterContext {...renderProps} />)
+      const html = renderToString(
+        <Provider store={store}>
+          <RouterContext {...renderProps} />
+        </Provider>
+      )
 
       // Grab the initial state from our Redux store
       const preloadedState = store.getState()
